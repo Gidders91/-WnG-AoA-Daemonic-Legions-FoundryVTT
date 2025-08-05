@@ -1,0 +1,82 @@
+{
+  "id": "tg-aoa-daemoniclegions",
+  "title": "AoA - Daemonic Legions",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Tom Gidman",
+      "email": "tommeh_g@hotmail.com",
+      "discord": "Gidders91",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "packs": [
+    {
+      "name": "daemonic-legions",
+      "label": "Daemonic Legions",
+      "path": "packs/daemonic-legions.db",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "wrath-and-glory"
+    },
+    {
+      "name": "daemonic-legions-items",
+      "label": "Daemonic Legions - Items",
+      "path": "packs/daemonic-legions-items.db",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "wrath-and-glory"
+    },
+    {
+      "name": "daemonic-legions-journals",
+      "label": "Daemonic Legions - Journals",
+      "path": "packs/daemonic-legions-journals.db",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "wrath-and-glory"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "AoA - Daemonic Legions",
+      "sorting": "m",
+	  "color": "#000000",
+      "packs": [
+        "daemonic-legions",
+        "daemonic-legions-items",
+        "daemonic-legions-journals"
+      ]
+    }
+  ],
+  "relationships": {
+    "recommends": [
+      {
+        "id": "wng-core",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "warhammer-lib",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "description": ""
+}
